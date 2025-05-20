@@ -33,9 +33,11 @@ cd selenium_python_projects
 
 2. Set up and activate a virtual environment (recommended)
 
-python -m venv venv
-venv\Scripts\activate - Windows
-source venv/bin/activate - macOS/Linux
+Set up virtual environment: python -m venv venv
+
+For Windows activate by: venv\Scripts\activate 
+
+For macos/Linux activate by: source venv/bin/activate 
 
 3. Install dependencies
 
