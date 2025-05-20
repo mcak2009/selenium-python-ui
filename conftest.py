@@ -1,6 +1,8 @@
 import pytest
 import os
 from utils.driver_factory import create_driver
+import webbrowser
+from pathlib import Path
 
 
 @pytest.fixture
@@ -21,5 +23,10 @@ def pytest_runtest_makereport(item, call):
             screenshot_file = os.path.join(screenshot_dir, f"{item.name}.png")  
             driver.save_screenshot(screenshot_file)
 
+def pytest_sessionfinish(session, exitstatus):
+    """Hook to open HTML report automatically after tests finish"""
+    report_path = Path("reports/test_report.html").resolve()
+    if report_path.exists():
+        webbrowser.open_new_tab(f"file://{report_path}")
 
             

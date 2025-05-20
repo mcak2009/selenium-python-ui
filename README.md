@@ -1,6 +1,6 @@
 # Selenium Python UI Automation - SauceDemo
 
-This is an automated UI testing project using Selenium with Python and pytest for the [Sauce Demo](https://www.saucedemo.com/) web application. It includes tests for login functionality, product interaction, and checkout processes, complete with error screenshots.
+This is an automated UI testing project using Selenium with Python and pytest for the [Sauce Demo](https://www.saucedemo.com/) web application. It includes tests for login functionality, product interaction, and checkout processes, complete with error screenshots and Test Report.
 
 
 # Project Structure
@@ -49,6 +49,10 @@ pytest -s
 
 On test failure, a screenshot will be saved to the screenshots/ folder.
 
+To run the test for Test Report:
+
+pytest --html=reports/test_report.html --self-contained-html
+
 5. Screenshot Naming 
 Filenames include test name and timestamp, e.g., test_valid_login_2025-05-20_153012.png
 
@@ -64,4 +68,6 @@ Pytest framework
 Screenshot capture on test failure
 
 Modular POM structure
+
+
 
