@@ -1,8 +1,7 @@
 # Selenium Python UI Automation - SauceDemo
 
-This is an automated UI testing project using Selenium with Python and pytest for the [Sauce Demo](https://www.saucedemo.com/) web application. It includes tests for login functionality, product interaction, and checkout processes, complete with screenshots.
+This is an automated UI testing project using Selenium with Python and pytest for the [Sauce Demo](https://www.saucedemo.com/) web application. It includes tests for login functionality, product interaction, and checkout processes, complete with error screenshots.
 
----
 
 # Project Structure
 
@@ -24,40 +23,38 @@ selenium_python_projects/
 ├── README.md # Project documentation
 
 
----
 
-## 🛠 Setup Instructions
+# Set Up Instructions:
 
-# 1. Clone this repo
+1. Clone this repo
 
-```bash
 git clone https://github.com/your-username/selenium_python_projects.git
 cd selenium_python_projects
 
-# 2. Set up and activate a virtual environment (recommended)
+2. Set up and activate a virtual environment (recommended)
 
 python -m venv venv
-venv\Scripts\activate   # Windows
-# source venv/bin/activate  # macOS/Linux
+venv\Scripts\activate - Windows
+source venv/bin/activate - macOS/Linux
 
-# 3. Install dependencies
+3. Install dependencies
 
 pip install -r requirements.txt
 
-# 4. Running Tests
+4. Running Tests
 
 pytest -s
 
 On test failure, a screenshot will be saved to the screenshots/ folder.
 
-# 5. Screenshot Naming 
+5. Screenshot Naming 
 Filenames include test name and timestamp, e.g., test_valid_login_2025-05-20_153012.png
 
 Screenshot logic is handled in conftest.py
 
 screenshots are generated automatically after test execution
 
-# 6. Key Features
+6. Key Features
 Selenium WebDriver for UI interactions
 
 Pytest framework
